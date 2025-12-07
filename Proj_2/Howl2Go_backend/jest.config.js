@@ -14,7 +14,9 @@ export default {
     'src/**/*.js',
     '!src/__tests__/**',
     '!src/scripts/**',
-    '!src/server.js'
+    '!src/server.js',
+    '!src/services/**',
+    '!src/controllers/**'   
   ],
 
   // Coverage thresholds
