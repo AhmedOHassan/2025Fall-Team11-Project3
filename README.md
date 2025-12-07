@@ -98,6 +98,51 @@ Complete REST API, TypeScript support, comprehensive docs, and pre-commit and po
 
 ## 🚀 Quick Start
 
+### Option 1: Docker Compose (Recommended)
+
+The easiest way to run the full stack:
+
+```bash
+cd Proj_2
+
+# Start all services (MongoDB, Backend, Frontend)
+docker compose up -d
+
+# View logs
+docker compose logs -f
+
+# Stop all services
+docker compose down
+```
+
+Access:
+- **Frontend**: http://localhost:3000
+- **Backend API**: http://localhost:4000
+
+### Option 2: Development Script
+
+For local development with hot reload:
+
+```bash
+cd Proj_2
+
+# Start all services in background
+./start-dev.sh
+
+# Or run in separate terminals for debugging:
+./start-dev.sh --mongo      # Terminal 1: MongoDB
+./start-dev.sh --backend    # Terminal 2: Backend (port 4000)
+./start-dev.sh --frontend   # Terminal 3: Frontend (port 3000)
+
+# Stop all services
+./start-dev.sh --stop
+
+# View logs
+./start-dev.sh --logs
+```
+
+### Option 3: Manual Setup
+
 ### Prerequisites
 - Node.js 18+ and npm 9+
 - MongoDB Atlas account (or local MongoDB)
@@ -106,7 +151,7 @@ Complete REST API, TypeScript support, comprehensive docs, and pre-commit and po
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/AhmedOHassan/2025Fall-Team11-Project3.git
-cd SE_Project_Grp_27/Proj\ 2
+cd 2025Fall-Team11-Project3/Proj_2
 ```
 
 ### 2. Setup Backend
