@@ -6,7 +6,7 @@ import User from "../models/User.js";
  * Provides admin-only user management endpoints: list users, create staff
  * accounts, update user fields, and deactivate/delete users.
  *
- * Author: Ahmed Hassan
+ * @author Ahmed Hassan
  */
 
 // List all users (admin only)

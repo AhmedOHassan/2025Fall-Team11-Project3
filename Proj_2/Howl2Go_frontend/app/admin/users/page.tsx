@@ -13,6 +13,8 @@ import { useAuth } from "@/context/AuthContext";
  *
  * This page should only be accessible to admin accounts. It uses the frontend
  * proxy so the httpOnly accessToken is forwarded.
+ *
+ * @author Ahmed Hassan
  */
 
 type User = {

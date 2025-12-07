@@ -1,5 +1,13 @@
 "use client";
 
+/**
+ * Footer Component
+ * - Displays branding, team members, and relevant links
+ * - Used across all pages of the Howl2Go application
+ *
+ * @author Ahmed Hassan
+ */
+
 export default function Footer() {
   return (
     <footer className="bg-[var(--bg-card)] border-t border-[var(--border)] py-4 mt-auto">
