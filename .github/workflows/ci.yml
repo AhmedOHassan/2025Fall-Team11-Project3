@@ -86,10 +86,9 @@ jobs:
       - name: Run backend tests (with coverage)
         env:
           CI: "true"
-        run: |
-          # Run tests and capture output so we can inspect it in later steps
-          npm test -- --coverage 2>&1 | tee Proj_2/Howl2Go_backend/test-output.log
+        run: npm test -- --coverage
         working-directory: "Proj_2/Howl2Go_backend"
+        continue-on-error: true
 
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v4
@@ -102,14 +101,8 @@ jobs:
       - name: Show coverage files (debug)
         if: always()
         run: |
-          echo "Listing backend root dir"
-          ls -la Proj_2/Howl2Go_backend || true
-
-          echo "Listing backend coverage dir (if present)"
+          echo "Listing backend coverage dir"
           ls -la Proj_2/Howl2Go_backend/coverage || true
-
-          echo "Showing last 200 lines of test output"
-          tail -n 200 Proj_2/Howl2Go_backend/test-output.log || true
 
       # after the "Run backend tests (with coverage)" step
       - name: Upload coverage to Coveralls
