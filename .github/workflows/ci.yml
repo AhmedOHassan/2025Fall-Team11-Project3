@@ -108,9 +108,8 @@ jobs:
       - name: Upload coverage to Coveralls
         uses: coverallsapp/github-action@v2
         if: always()
-        working-directory: "Proj_2/Howl2Go_backend"
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          file: coverage/lcov.info
+          file: Proj_2/Howl2Go_backend/coverage/lcov.info
         env:
           COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
