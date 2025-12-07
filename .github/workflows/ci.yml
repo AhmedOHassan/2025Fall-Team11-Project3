@@ -1,105 +1,113 @@
 name: Backend CI
 
 on:
-    push:
-        branches: [main]
-        paths:
-            - "Proj_2/Howl2Go_backend/**"
-            - ".github/workflows/**"
-    pull_request:
-        paths:
-            - "Proj_2/Howl2Go_backend/**"
-            - ".github/workflows/**"
+  push:
+    branches: ["main"]
+    paths:
+      - "Proj_2/Howl2Go_backend/**"
+      - ".github/workflows/**"
+  pull_request:
+    paths:
+      - "Proj_2/Howl2Go_backend/**"
+      - ".github/workflows/**"
 
 concurrency:
-    group: backend-ci-${{ github.ref }}-${{ github.event.pull_request.number || github.run_id }}
-    cancel-in-progress: true
+  group: backend-ci-${{ github.ref }}-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
 
 permissions:
-    contents: read
+  contents: read
 
 jobs:
-    test:
-        runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-            - name: Use Node.js 18
-              uses: actions/setup-node@v4
-              with:
-                  node-version: 18
-                  cache: npm
-                  cache-dependency-path: |
-                      Proj_2/Howl2Go_backend/package-lock.json
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: |
+            Proj_2/Howl2Go_backend/package-lock.json
 
-            - name: Install backend dependencies
-              run: npm ci
-              working-directory: "Proj_2/Howl2Go_backend"
+      - name: Install backend dependencies
+        run: npm ci
+        working-directory: "Proj_2/Howl2Go_backend"
 
-            # Create .env for tests: combine defaults + secrets
-            - name: Create .env from example + GitHub Secrets
-              run: |
-                  # Start from .env.example (safe defaults)
-                  if [ -f .env.example ]; then cp .env.example .env; else :; fi
+      # Create .env for tests: combine defaults + secrets
+      - name: Create .env from example + GitHub Secrets
+        run: |
+          # Start from .env.example (safe defaults)
+          if [ -f .env.example ]; then cp .env.example .env; else :; fi
 
-                  # Overwrite with sensitive/test credentials from GitHub Secrets
-                  {
-                    echo "PORT=4000"
-                    echo "NODE_ENV=test"
+          # Overwrite with sensitive/test credentials from GitHub Secrets
+          {
+            echo "PORT=4000"
+            echo "NODE_ENV=test"
 
-                    # IMPORTANT: Use TEST database, NOT production
-                    # Either use a separate test database URI from secrets, or append -test to database name
-                    if [ -n "${{ secrets.MONGODB_TEST_URI }}" ]; then
-                      echo "MONGODB_URI=${{ secrets.MONGODB_TEST_URI }}"
-                    else
-                      # Fallback: append -test to the production database name
-                      TEST_URI=$(echo "${{ secrets.MONGODB_URI }}" | sed 's/\(mongodb.*\/\)\([^?]*\)/\1\2-test/')
-                      echo "MONGODB_URI=$TEST_URI"
-                    fi
+            # IMPORTANT: Use TEST database, NOT production
+            # Either use a separate test database URI from secrets, or append -test to database name
+            if [ -n "${{ secrets.MONGODB_TEST_URI }}" ]; then
+              echo "MONGODB_URI=${{ secrets.MONGODB_TEST_URI }}"
+            else
+              # Fallback: append -test to the production database name
+              TEST_URI=$(echo "${{ secrets.MONGODB_URI }}" | sed 's/\(mongodb.*\/\)\([^?]*\)/\1\2-test/')
+              echo "MONGODB_URI=$TEST_URI"
+            fi
 
-                    echo "JWT_SECRET=${{ secrets.JWT_SECRET }}"
-                    echo "JWT_EXPIRES_IN=7d"
-                    echo "JWT_REFRESH_SECRET=${{ secrets.JWT_REFRESH_SECRET }}"
-                    echo "JWT_REFRESH_EXPIRES_IN=30d"
+            echo "JWT_SECRET=${{ secrets.JWT_SECRET }}"
+            echo "JWT_EXPIRES_IN=7d"
+            echo "JWT_REFRESH_SECRET=${{ secrets.JWT_REFRESH_SECRET }}"
+            echo "JWT_REFRESH_EXPIRES_IN=30d"
 
-                    echo "SESSION_SECRET=${{ secrets.SESSION_SECRET }}"
-                    echo "SESSION_NAME=howl2go.sid"
-                    echo "SESSION_MAX_AGE=86400000"
+            echo "SESSION_SECRET=${{ secrets.SESSION_SECRET }}"
+            echo "SESSION_NAME=howl2go.sid"
+            echo "SESSION_MAX_AGE=86400000"
 
-                    echo "GROQ_API_KEY=${{ secrets.GROQ_API_KEY }}"
+            echo "GROQ_API_KEY=${{ secrets.GROQ_API_KEY }}"
 
-                    # Optional: DoorDash API keys (only if used in tests)
-                    # echo "DOORDASH_DEVELOPER_ID=${{ secrets.DOORDASH_DEVELOPER_ID }}"
-                    # echo "DOORDASH_KEY_ID=${{ secrets.DOORDASH_KEY_ID }}"
-                    # echo "DOORDASH_SIGNING_SECRET=${{ secrets.DOORDASH_SIGNING_SECRET }}"
-                  } > .env
+            # Optional: DoorDash API keys (only if used in tests)
+            # echo "DOORDASH_DEVELOPER_ID=${{ secrets.DOORDASH_DEVELOPER_ID }}"
+            # echo "DOORDASH_KEY_ID=${{ secrets.DOORDASH_KEY_ID }}"
+            # echo "DOORDASH_SIGNING_SECRET=${{ secrets.DOORDASH_SIGNING_SECRET }}"
+          } > .env
 
-                  echo ".env created with $(grep -c '=' .env) entries"
-                  echo "Using test database (not production)"
-              working-directory: "Proj_2/Howl2Go_backend"
+          echo ".env created with $(grep -c '=' .env) entries"
+          echo "Using test database (not production)"
+        working-directory: "Proj_2/Howl2Go_backend"
 
-            # Run backend tests (they will connect to Atlas)
-            - name: Run backend tests (with coverage)
-              env:
-                  CI: "true"
-              run: npm test -- --coverage
-              working-directory: "Proj_2/Howl2Go_backend"
-              continue-on-error: true
+      # Run backend tests (they will connect to Atlas)
+      - name: Run backend tests (with coverage)
+        env:
+          CI: "true"
+        run: npm test -- --coverage
+        working-directory: "Proj_2/Howl2Go_backend"
+        continue-on-error: true
 
-            - name: Upload coverage artifact
-              uses: actions/upload-artifact@v4
-              if: always()
-              with:
-                  name: backend-coverage
-                  path: Proj_2/Howl2Go_backend/coverage/**
-                  if-no-files-found: warn
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: backend-coverage
+          path: Proj_2/Howl2Go_backend/coverage/**
+          if-no-files-found: warn
 
-            # after the "Run backend tests (with coverage)" step
-            - name: Upload coverage to Coveralls
-              uses: coverallsapp/github-action@v2
-              if: always()
-              with:
-                  github-token: ${{ secrets.GITHUB_TOKEN }}
-                  file: Proj_2/Howl2Go_backend/coverage/lcov.info
+      - name: Show coverage files (debug)
+        if: always()
+        run: |
+          echo "Listing backend coverage dir"
+          ls -la Proj_2/Howl2Go_backend/coverage || true
+
+      # after the "Run backend tests (with coverage)" step
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@v2
+        if: always()
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          file: Proj_2/Howl2Go_backend/coverage/lcov.info
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
