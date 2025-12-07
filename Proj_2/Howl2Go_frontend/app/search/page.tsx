@@ -4,6 +4,15 @@ import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, ArrowLeft } from "lucide-react";
+
+/**
+ * Smart Menu Search Page
+ * - Allows users to search for food items and get recommendations
+ * - Supports sorting by relevance, protein per dollar, calories within budget, and price
+ * - Filters by selected restaurants and budget
+ * 
+ * @author Ahmed Hassan
+ */
 import Link from "next/link";
 import Image from "next/image";
 import type { FoodItem } from "@/types/food";

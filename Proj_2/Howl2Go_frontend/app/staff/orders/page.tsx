@@ -9,6 +9,8 @@ import { RefreshCw, XCircle } from "lucide-react";
  * - Fetches all orders via `/api/orders` (admin/staff endpoint) using the proxy
  * - Shows only orders with status pending, in_progress, or ready
  * - Allows staff to change an order's status among the allowed set
+ * 
+ * @author Ahmed Hassan
  */
 
 type OrderItem = {

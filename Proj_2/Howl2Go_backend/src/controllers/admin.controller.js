@@ -6,10 +6,9 @@ import User from "../models/User.js";
  * Provides admin-only user management endpoints: list users, create staff
  * accounts, update user fields, and deactivate/delete users.
  *
- * Author: Ahmed Hassan
+ * @author Ahmed Hassan
  */
 
-// List all users (admin only)
 export const listUsers = async (req, res) => {
   try {
     const users = await User.find({}).select("name email role isActive createdAt updatedAt");

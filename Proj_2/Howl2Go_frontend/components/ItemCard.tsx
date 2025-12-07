@@ -1,5 +1,14 @@
 "use client";
 
+/**
+ * ItemCard Component
+ * - Displays individual food items with details like restaurant, calories, and price
+ * - Supports different variants: default, compact, dashboard
+ * - Handles adding items to cart or meal log
+ *
+ * @author Ahmed Hassan
+ */
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
