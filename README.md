@@ -17,8 +17,8 @@
 [![Backend Deployment Status](https://img.shields.io/badge/Backend-Live-brightgreen.svg?style=flat&logo=render)](https://howl2go-backend-service.onrender.com/api/health)
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.17547804-blue?style=flat-square)](https://doi.org/10.5281/zenodo.17547804)
 [![Coverage Status](https://coveralls.io/repos/github/AhmedOHassan/2025Fall-Team11-Project3/badge.svg?branch=main)](https://coveralls.io/github/AhmedOHassan/2025Fall-Team11-Project3?branch=main)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/harsha711/SE_Project_Grp_27)
-[![Tests](https://img.shields.io/badge/tests-404%20passing-success)](https://github.com/harsha711/SE_Project_Grp_27)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3)
+[![Tests](https://img.shields.io/badge/tests-404%20passing-success)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 <!-- Technology Badges -->
@@ -42,10 +42,10 @@
 [![Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 
 <!-- Project Stats -->
-[![GitHub Stars](https://img.shields.io/github/stars/harsha711/SE_Project_Grp_27?style=social)](https://github.com/harsha711/SE_Project_Grp_27)
-[![GitHub Forks](https://img.shields.io/github/forks/harsha711/SE_Project_Grp_27?style=social)](https://github.com/harsha711/SE_Project_Grp_27/fork)
-[![GitHub Issues](https://img.shields.io/github/issues/harsha711/SE_Project_Grp_27)](https://github.com/harsha711/SE_Project_Grp_27/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/harsha711/SE_Project_Grp_27)](https://github.com/harsha711/SE_Project_Grp_27/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/AhmedOHassan/2025Fall-Team11-Project3?style=social)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3)
+[![GitHub Forks](https://img.shields.io/github/forks/AhmedOHassan/2025Fall-Team11-Project3?style=social)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3/fork)
+[![GitHub Issues](https://img.shields.io/github/issues/AhmedOHassan/2025Fall-Team11-Project3)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/AhmedOHassan/2025Fall-Team11-Project3)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3/pulls)
 
 [Documentation](Proj_2/docs/) • [Getting Started](Proj_2/docs/GETTING_STARTED.md) • [API Docs](Proj_2/docs/API_DOCUMENTATION.md) • [Features](Proj_2/docs/FEATURES.md)
 
@@ -105,7 +105,7 @@ Complete REST API, TypeScript support, comprehensive docs, and pre-commit and po
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/harsha711/SE_Project_Grp_27.git
+git clone https://github.com/AhmedOHassan/2025Fall-Team11-Project3.git
 cd SE_Project_Grp_27/Proj\ 2
 ```
 
@@ -310,8 +310,8 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ## 📞 Support
 
 - 📧 Email: supp0rt.howl2go@gmail.com
-- 🐛 Issues: [GitHub Issues](https://github.com/harsha711/SE_Project_Grp_27/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/harsha711/SE_Project_Grp_27/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/AhmedOHassan/2025Fall-Team11-Project3/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/AhmedOHassan/2025Fall-Team11-Project3/discussions)
 
 ---
 
