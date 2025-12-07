@@ -2,9 +2,7 @@ name: Backend CI
 
 on:
   push:
-    branches:
-      - main
-      - "feature/**"
+    branches: ["main"]
     paths:
       - "Proj_2/Howl2Go_backend/**"
       - ".github/workflows/**"
