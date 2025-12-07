@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - 'feature/**'
+      - "feature/**"
     paths:
       - "Proj_2/Howl2Go_backend/**"
       - ".github/workflows/**"
@@ -98,12 +98,19 @@ jobs:
           path: Proj_2/Howl2Go_backend/coverage/**
           if-no-files-found: warn
 
+      - name: Show coverage files (debug)
+        if: always()
+        run: |
+          echo "Listing backend coverage dir"
+          ls -la Proj_2/Howl2Go_backend/coverage || true
+
       # after the "Run backend tests (with coverage)" step
       - name: Upload coverage to Coveralls
         uses: coverallsapp/github-action@v2
         if: always()
+        working-directory: "Proj_2/Howl2Go_backend"
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          file: Proj_2/Howl2Go_backend/coverage/lcov.info
+          file: coverage/lcov.info
         env:
           COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
