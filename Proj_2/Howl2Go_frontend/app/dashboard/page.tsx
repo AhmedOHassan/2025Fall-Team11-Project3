@@ -1,8 +1,16 @@
+/**
+ * @fileoverview Dashboard page
+ * @description User dashboard with personalized data and recommendations
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import DashboardHero from "@/components/DashboardHero";
+import RecommendationsSection from "@/components/RecommendationsSection";
 import Footer from "@/components/Footer";
 import { useAuth } from "@/context/AuthContext";
 import {
@@ -64,6 +72,13 @@ export default function Dashboard() {
           userName={user.name}
           dailyProgress={dailyProgress}
           recentMeals={todaysMeals}
+        />
+
+        {/* AI-Powered Recommendations Section */}
+        <RecommendationsSection
+          title="Recommended for You"
+          showProfile={true}
+          limit={8}
         />
       </div>
 

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview JWT utility tests
+ * @description Unit tests for JWT token generation and verification
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { describe, test, expect, beforeAll, afterAll } from "@jest/globals";
 import assert from "node:assert/strict";
 import jwt from "jsonwebtoken";

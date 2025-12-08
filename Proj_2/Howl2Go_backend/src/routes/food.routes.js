@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Food routes
+ * @description API routes for food item queries and recommendations
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import express from 'express';
 import {
   recommendFood
@@ -5,8 +12,10 @@ import {
 import {
   parseLLMQuery,
   buildMongoQuery,
-  validateCriteria
+  validateCriteria,
+  applyUserPreferences
 } from '../middleware/llm.middleware.js';
+import { optionalAuth } from '../middleware/auth.middleware.js';
 
 const router = express.Router();
 
@@ -14,7 +23,7 @@ const router = express.Router();
  * @route POST /api/food/recommend
  * @desc Get food recommendations based on natural language preferences
  * @body { query: string, limit?: number }
- * @access Public
+ * @access Public (but uses user preferences if authenticated)
  *
  * @example
  * POST /api/food/recommend
@@ -28,7 +37,13 @@ const router = express.Router();
  *   "recommendations": [...],
  *   "count": 5
  * }
+ * 
+ * When authenticated, user preferences are applied:
+ * - maxCalories: Applied as default calorie limit if not specified in query
+ * - minProtein: Applied as default protein minimum if not specified in query
+ * - favoriteRestaurants: Results from these restaurants are boosted to top
+ * - dietaryRestrictions: Reserved for future filtering
  */
-router.post('/recommend', parseLLMQuery, validateCriteria, buildMongoQuery, recommendFood);
+router.post('/recommend', optionalAuth, parseLLMQuery, validateCriteria, applyUserPreferences, buildMongoQuery, recommendFood);
 
 export default router;

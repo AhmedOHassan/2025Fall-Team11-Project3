@@ -1,5 +1,8 @@
 /**
- * Simple counter model
+ * @fileoverview Counter model
+ * @description Simple counter model for sequential number generation
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Provides a tiny collection used to store named numeric counters (e.g. for
  * sequential `orderNumber` assignments). The application increments the

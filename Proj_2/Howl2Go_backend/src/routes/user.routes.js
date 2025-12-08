@@ -1,3 +1,10 @@
+/**
+ * @fileoverview User routes
+ * @description API routes for user authentication and profile management
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import express from "express";
 import {
   register,
@@ -5,6 +12,8 @@ import {
   getProfile,
   changePassword,
   refreshAccessToken,
+  getPreferences,
+  updatePreferences,
 } from "../controllers/user.controller.js";
 import { authenticate } from "../middleware/auth.middleware.js";
 
@@ -20,6 +29,10 @@ router.use(authenticate); // All routes below this require authentication
 
 // User profile routes
 router.get("/profile", getProfile);
+
+// User preferences routes
+router.get("/preferences", getPreferences);
+router.patch("/preferences", updatePreferences);
 
 // Password management
 router.post("/change-password", changePassword);

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Database connection configuration
+ * @description Manages MongoDB connection using Mongoose
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import mongoose from 'mongoose';
 import config from './env.js';
 

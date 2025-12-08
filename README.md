@@ -8,17 +8,16 @@
 
 *Crave it. Find it. Instantly.*
 
+[![Watch the previous features demo](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](https://drive.google.com/file/d/1GpH5jJUv2xHC_xYNScsTxllGcykTA2Hj/view?usp=drive_link)
 
-
-[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](https://drive.google.com/file/d/1GpH5jJUv2xHC_xYNScsTxllGcykTA2Hj/view?usp=drive_link)
-
+[![Watch the new features demo](https://img.youtube.com/vi/tOoPAFytK_I/0.jpg)](https://youtu.be/tOoPAFytK_I?si=ntMP5fyg6Uxubvv_)
 
 <!-- Build & Quality Badges -->
 [![Backend Deployment Status](https://img.shields.io/badge/Backend-Live-brightgreen.svg?style=flat&logo=render)](https://howl2go-backend-service.onrender.com/api/health)
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.17547804-blue?style=flat-square)](https://doi.org/10.5281/zenodo.17547804)
-[![Coverage Status](https://coveralls.io/repos/github/harsha711/SE_Project_Grp_27/badge.svg?branch=main)](https://coveralls.io/github/harsha711/SE_Project_Grp_27?branch=main)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/harsha711/SE_Project_Grp_27)
-[![Tests](https://img.shields.io/badge/tests-404%20passing-success)](https://github.com/harsha711/SE_Project_Grp_27)
+[![Coverage Status](https://coveralls.io/repos/github/AhmedOHassan/2025Fall-Team11-Project3/badge.svg?branch=main)](https://coveralls.io/github/AhmedOHassan/2025Fall-Team11-Project3?branch=main)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3)
+[![Tests](https://img.shields.io/badge/tests-404%20passing-success)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 <!-- Technology Badges -->
@@ -42,10 +41,10 @@
 [![Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 
 <!-- Project Stats -->
-[![GitHub Stars](https://img.shields.io/github/stars/harsha711/SE_Project_Grp_27?style=social)](https://github.com/harsha711/SE_Project_Grp_27)
-[![GitHub Forks](https://img.shields.io/github/forks/harsha711/SE_Project_Grp_27?style=social)](https://github.com/harsha711/SE_Project_Grp_27/fork)
-[![GitHub Issues](https://img.shields.io/github/issues/harsha711/SE_Project_Grp_27)](https://github.com/harsha711/SE_Project_Grp_27/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/harsha711/SE_Project_Grp_27)](https://github.com/harsha711/SE_Project_Grp_27/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/AhmedOHassan/2025Fall-Team11-Project3?style=social)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3)
+[![GitHub Forks](https://img.shields.io/github/forks/AhmedOHassan/2025Fall-Team11-Project3?style=social)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3/fork)
+[![GitHub Issues](https://img.shields.io/github/issues/AhmedOHassan/2025Fall-Team11-Project3)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/AhmedOHassan/2025Fall-Team11-Project3)](https://github.com/AhmedOHassan/2025Fall-Team11-Project3/pulls)
 
 [Documentation](Proj_2/docs/) • [Getting Started](Proj_2/docs/GETTING_STARTED.md) • [API Docs](Proj_2/docs/API_DOCUMENTATION.md) • [Features](Proj_2/docs/FEATURES.md)
 
@@ -105,7 +104,7 @@ Complete REST API, TypeScript support, comprehensive docs, and pre-commit and po
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/harsha711/SE_Project_Grp_27.git
+git clone https://github.com/AhmedOHassan/2025Fall-Team11-Project3.git
 cd SE_Project_Grp_27/Proj\ 2
 ```
 
@@ -256,10 +255,18 @@ SE_Project_Grp_27/
   - Added price-range recommendation support (e.g., "Show me meals between $8 and $12").
 - ✅ Micronutrient extension
   - Added 7 micronutrient fields (Iron, Potassium, Magnesium, Calcium, Vitamin A, Vitamin C, Vitamin D) across 1,150+ items; enables natural-language micronutrient queries (e.g., "Show me meals high in iron").
+- ✅ AI-powered meal recommendations
+  - Personalized recommendation system that analyzes user order history to provide tailored suggestions.
+  - Recommendation strategies: frequent favorites, similar items by nutrition/taste, explore new restaurants, healthier lower-calorie alternatives, time-based suggestions, and popular-items fallback.
+  - Integrated Groq LLM with algorithmic fallback for reliability.
+  - Frontend carousel with loading states and add-to-cart functionality.
+- ✅ User preferences
+  - Users can save dietary preferences (max calories, min protein, favorite restaurants, dietary restrictions).
+  - Preferences automatically apply to food recommendations as defaults.
+  - Favorite restaurants are boosted to top of search results.
+  - Full preferences management UI at /preferences.
 
 ### Future Milestones
-- Ingredient-Based Recommendations
-- Fine-Tuned LLM Integration
 - Group Orders Optimization
 
 ## 👥 Team
@@ -302,8 +309,8 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ## 📞 Support
 
 - 📧 Email: supp0rt.howl2go@gmail.com
-- 🐛 Issues: [GitHub Issues](https://github.com/harsha711/SE_Project_Grp_27/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/harsha711/SE_Project_Grp_27/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/AhmedOHassan/2025Fall-Team11-Project3/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/AhmedOHassan/2025Fall-Team11-Project3/discussions)
 
 ---
 

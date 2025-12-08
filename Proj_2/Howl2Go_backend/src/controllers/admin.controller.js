@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Admin controller
+ * @description Handles administrative user management operations
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import User from "../models/User.js";
 
 /**

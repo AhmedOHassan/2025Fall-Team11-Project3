@@ -1,4 +1,9 @@
-// Mock data for dashboard - will be replaced with real API calls
+/**
+ * @fileoverview Mock dashboard data
+ * @description Mock data for dashboard testing and development
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
 
 import type { DashboardData } from "@/types/user";
 

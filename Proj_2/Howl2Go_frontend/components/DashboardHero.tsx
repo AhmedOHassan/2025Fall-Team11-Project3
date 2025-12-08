@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Dashboard hero component
+ * @description Main hero section for user dashboard
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { useState } from "react";
@@ -69,29 +76,6 @@ export default function DashboardHero({
           onSearchFocus={handleSearchFocus}
           onSearchBlur={handleSearchBlur}
         />
-
-        {/* Daily Progress Ring - Centered below search */}
-        <div
-          className={`flex justify-center mt-8 transition-all duration-500 ${
-            isSearchFocused
-              ? "opacity-0 blur-sm scale-95"
-              : "opacity-100 blur-0 scale-100"
-          }`}
-        >
-          <DailyProgressRing
-            dailyProgress={dailyProgress}
-            size="large"
-            onClick={handleProgressRingClick}
-          />
-        </div>
-
-        {/* Recent Meals Section */}
-        <div id="recent-meals">
-          <RecentMealsSection
-            meals={recentMeals}
-            isVisible={!isSearchFocused}
-          />
-        </div>
       </div>
     </section>
   );

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Cart model
+ * @description MongoDB schema for shopping cart with session management
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import mongoose from 'mongoose';
 
 const cartItemSchema = new mongoose.Schema({

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Token refresh API route
+ * @description Refreshes access token using refresh token
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { cookies } from "next/headers";
 
 export async function POST() {

@@ -1,5 +1,8 @@
 /**
- * API route index
+ * @fileoverview API route index
+ * @description Central router that mounts all feature routes
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Central router that mounts feature routers under `/api/*` in the server.
  * - `/health`  : health checks
@@ -7,6 +10,7 @@
  * - `/users`   : user registration, login, profile
  * - `/cart`    : session/cart operations (optional authentication)
  * - `/orders`  : order creation and management
+ * - `/recommendations` : AI-powered meal recommendations
  *
  * @author Ahmed Hassan
  */
@@ -17,6 +21,7 @@ import userRouter from "./user.routes.js";
 import cartRouter from "./cart.routes.js";
 import orderRouter from "./order.routes.js";
 import adminRouter from "./admin.routes.js";
+import recommendationRouter from "./recommendation.routes.js";
 
 const router = Router();
 
@@ -26,5 +31,6 @@ router.use("/users", userRouter);
 router.use("/cart", cartRouter);
 router.use("/orders", orderRouter);
 router.use("/admin", adminRouter);
+router.use("/recommendations", recommendationRouter);
 
 export default router;

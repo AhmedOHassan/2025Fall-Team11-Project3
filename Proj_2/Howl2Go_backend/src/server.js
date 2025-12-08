@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Server initialization and startup
+ * @description Creates HTTP server and handles database connection
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import http from 'http';
 import app from './app.js';
 import env from './config/env.js';

@@ -1,5 +1,9 @@
 /**
- * Direct test of price parsing functionality
+ * @fileoverview Live price parsing test
+ * @description Direct test of price parsing with LLM service
+ * @author Howl2Go Dev Team
+ * @date 2025
+ *
  * This calls the LLM service directly to prove it works
  */
 

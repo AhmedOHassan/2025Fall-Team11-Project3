@@ -1,5 +1,8 @@
 /**
- * Header component: top navigation and user controls.
+ * @fileoverview Header component
+ * @description Top navigation bar with user controls and cart
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Renders the site logo/branding, primary navigation links (About, Dashboard, Orders),
  * the cart link with badge (consumes `CartContext`), and the user menu (consumes
@@ -12,7 +15,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { User, ShoppingCart, LogOut } from "lucide-react";
+import { User, ShoppingCart, LogOut, Settings } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { useCart } from "@/context/CartContext";
 import { useState } from "react";
@@ -32,7 +35,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         {/* Left Side: Logo + Branding */}
         <div className="flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/dashboard" className="flex items-center gap-2">
             <Image
               src="/Howl2go_orange_logo_transparent.png"
               alt="Howl2Go Logo"
@@ -109,9 +112,17 @@ export default function Header() {
                   </span>
                 </button>
 
-                {/* Dropdown Menu - only Logout */}
+                {/* Dropdown Menu */}
                 {showUserMenu && (
                   <div className="absolute right-0 mt-2 w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-lg py-2 z-50">
+                    <Link
+                      href="/preferences"
+                      onClick={() => setShowUserMenu(false)}
+                      className="w-full text-left px-4 py-2 text-sm text-[var(--text)] hover:bg-[var(--bg-hover)] transition-colors flex items-center gap-2"
+                    >
+                      <Settings className="h-4 w-4" />
+                      Preferences
+                    </Link>
                     <button
                       onClick={() => {
                         setShowUserMenu(false);

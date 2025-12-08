@@ -1,3 +1,10 @@
+/**
+ * @fileoverview LLM service tests
+ * @description Unit tests for natural language processing service
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { describe, test, expect, beforeAll, afterAll } from "@jest/globals";
 import assert from "node:assert/strict";
 import { llmService } from "../services/llm.service.js";

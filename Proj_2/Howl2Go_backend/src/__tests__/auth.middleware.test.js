@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Authentication middleware tests
+ * @description Unit tests for JWT authentication and authorization middleware
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { describe, test, expect, beforeAll, afterAll, afterEach } from "@jest/globals";
 import assert from "node:assert/strict";
 import jwt from "jsonwebtoken";

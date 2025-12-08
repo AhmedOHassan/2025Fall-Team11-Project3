@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Environment configuration
+ * @description Loads and validates environment variables
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import dotenv from 'dotenv';
 
 dotenv.config();

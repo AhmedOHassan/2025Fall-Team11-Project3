@@ -1,4 +1,9 @@
-// User-related API calls
+/**
+ * @fileoverview User API client
+ * @description API functions for user profile management
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
 
 /**
  * Get current user profile

@@ -1,5 +1,8 @@
 /**
- * End-to-end test for price-based queries with actual database
+ * @fileoverview Price queries end-to-end test
+ * @description End-to-end test for price-based queries with database
+ * @author Howl2Go Dev Team
+ * @date 2025
  */
 
 import mongoose from 'mongoose';

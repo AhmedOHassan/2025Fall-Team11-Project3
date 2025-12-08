@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Login page client component
+ * @description Client-side login form with authentication logic
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";

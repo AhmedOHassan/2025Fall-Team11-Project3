@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Admin users page
+ * @description User management interface for administrators
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { useEffect, useState, useMemo } from "react";

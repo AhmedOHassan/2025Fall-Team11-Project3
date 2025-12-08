@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Main Express application configuration
+ * @description Configures Express middleware, routes, and error handling
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import cors from 'cors';
 import express from 'express';
 import morgan from 'morgan';

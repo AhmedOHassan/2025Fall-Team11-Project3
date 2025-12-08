@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Jest configuration
+ * @description Jest test runner configuration for backend tests
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 export default {
   // Use Node's experimental VM modules for ESM support
   testEnvironment: 'node',

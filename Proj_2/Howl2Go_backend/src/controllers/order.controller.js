@@ -1,5 +1,8 @@
 /**
- * Orders controller
+ * @fileoverview Order controller
+ * @description Handles order creation, retrieval, and management
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Responsible for creating orders from the current session cart (or from a
  * client-provided items payload), fetching a user's orders (or session orders

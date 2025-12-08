@@ -1,3 +1,10 @@
+/**
+ * @fileoverview App middleware (unused)
+ * @description Legacy middleware file - main middleware is at root level
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 

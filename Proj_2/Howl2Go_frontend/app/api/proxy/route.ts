@@ -1,5 +1,8 @@
 /**
- * Proxy route for the frontend.
+ * @fileoverview API proxy route
+ * @description Forwards frontend requests to backend with token authentication
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * This server-side route forwards frontend requests to the backend API and
  * attaches the httpOnly `accessToken` cookie as an `Authorization: Bearer <token>`

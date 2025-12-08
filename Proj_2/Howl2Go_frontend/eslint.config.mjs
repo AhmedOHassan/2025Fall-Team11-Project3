@@ -1,3 +1,10 @@
+/**
+ * @fileoverview ESLint configuration
+ * @description ESLint linting rules for frontend code
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
