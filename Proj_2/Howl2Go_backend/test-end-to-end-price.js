@@ -1,5 +1,9 @@
 /**
- * End-to-end test: Query database with price filters
+ * @fileoverview End-to-end price filter test
+ * @description Complete pipeline test for price filters from LLM to database
+ * @author Howl2Go Dev Team
+ * @date 2025
+ *
  * This proves the entire pipeline works: LLM → MongoDB → Results
  */
 

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Staff orders page
+ * @description Order management interface for staff members
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { useEffect, useState } from "react";

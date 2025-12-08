@@ -1,7 +1,8 @@
 /**
- * RecommendationsSection Component Tests
- *
- * Tests for the recommendations carousel section.
+ * @fileoverview RecommendationsSection component tests
+ * @description Tests for recommendations carousel section
+ * @author Howl2Go Dev Team
+ * @date 2025
  */
 
 import React from "react";

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview JWT utility functions
+ * @description Token generation, verification, and extraction utilities
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import jwt from 'jsonwebtoken';
 import { getEnvVariable } from '../config/env.js';
 

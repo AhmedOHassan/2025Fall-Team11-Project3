@@ -1,5 +1,9 @@
 /**
- * Manual test script for price-based recommendations
+ * @fileoverview Price-based recommendations test
+ * @description Manual test script for price-based recommendations with API calls
+ * @author Howl2Go Dev Team
+ * @date 2025
+ *
  * This tests the complete flow with actual API calls
  */
 

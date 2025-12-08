@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Jest configuration
+ * @description Jest test configuration for Next.js frontend
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 const nextJest = require('next/jest')
 
 const createJestConfig = nextJest({

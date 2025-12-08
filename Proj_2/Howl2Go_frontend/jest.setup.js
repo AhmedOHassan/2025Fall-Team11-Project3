@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Jest setup
+ * @description Global test setup and mocks for Jest tests
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 // Learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom'
 

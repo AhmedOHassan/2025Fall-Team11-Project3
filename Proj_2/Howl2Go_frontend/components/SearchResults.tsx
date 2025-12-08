@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Search results component
+ * @description Displays grid of food items from search results
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import ItemCard from "./ItemCard";

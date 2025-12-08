@@ -1,5 +1,8 @@
 /**
- * Header component: top navigation and user controls.
+ * @fileoverview Header component
+ * @description Top navigation bar with user controls and cart
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Renders the site logo/branding, primary navigation links (About, Dashboard, Orders),
  * the cart link with badge (consumes `CartContext`), and the user menu (consumes

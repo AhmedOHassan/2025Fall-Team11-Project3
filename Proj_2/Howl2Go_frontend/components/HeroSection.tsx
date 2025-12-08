@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Hero section component
+ * @description Main landing page hero with search functionality
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { useState, useEffect } from "react";

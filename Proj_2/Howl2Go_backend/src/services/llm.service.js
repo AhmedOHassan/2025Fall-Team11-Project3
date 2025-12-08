@@ -1,3 +1,10 @@
+/**
+ * @fileoverview LLM service
+ * @description Natural language processing for food queries using Groq API
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import Groq from "groq-sdk/index.mjs";
 import { config } from "../config/env.js";
 

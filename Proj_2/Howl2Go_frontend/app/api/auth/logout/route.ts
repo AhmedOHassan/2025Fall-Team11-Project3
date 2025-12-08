@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Logout API route
+ * @description Clears authentication cookies on logout
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 

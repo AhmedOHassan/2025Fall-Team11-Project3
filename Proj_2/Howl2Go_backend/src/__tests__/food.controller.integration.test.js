@@ -1,7 +1,12 @@
 /**
- * Integration tests for food.controller with mocked database
+ * @fileoverview Food controller integration tests
+ * @description Integration tests for food controller with mocked database
+ * @author Howl2Go Dev Team
+ * @date 2025
+ *
  * These tests cover the recommendFood function and its dependencies
  */
+
 import { describe, test, expect, jest, beforeEach } from "@jest/globals";
 import assert from "node:assert/strict";
 

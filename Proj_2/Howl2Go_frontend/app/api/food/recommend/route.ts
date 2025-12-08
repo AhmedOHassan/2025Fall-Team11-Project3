@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Food recommendation API route
+ * @description Proxies food recommendation requests to backend
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { cookies } from "next/headers";
 
 export async function POST(req: Request) {

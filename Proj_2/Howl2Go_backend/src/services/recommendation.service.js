@@ -1,5 +1,8 @@
 /**
- * Recommendation Service
+ * @fileoverview Recommendation service
+ * @description AI-powered personalized food recommendations based on user order history
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Provides AI-powered personalized food recommendations based on user order history.
  * Analyzes ordering patterns, preferences, and uses LLM to generate intelligent suggestions.

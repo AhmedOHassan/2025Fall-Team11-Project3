@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Footer component
+ * @description Site footer with branding, team info, and links
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 /**

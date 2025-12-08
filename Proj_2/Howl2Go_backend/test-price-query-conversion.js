@@ -1,5 +1,9 @@
 /**
- * Test price-based query functionality
+ * @fileoverview Price query conversion test
+ * @description Tests price-to-calorie constraint conversion functionality
+ * @author Howl2Go Dev Team
+ * @date 2025
+ *
  * Verifies that price constraints are converted to calorie constraints correctly
  */
 

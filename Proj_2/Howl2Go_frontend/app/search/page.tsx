@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Search page
+ * @description Food search with natural language query support
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { useState, useEffect, Suspense } from "react";

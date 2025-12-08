@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Cart context provider
+ * @description React context for managing shopping cart state
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";

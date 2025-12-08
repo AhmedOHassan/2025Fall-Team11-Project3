@@ -1,3 +1,10 @@
+/**
+ * @fileoverview LLM middleware
+ * @description Middleware for natural language query parsing and user preference application
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { llmService } from '../services/llm.service.js';
 
 /**

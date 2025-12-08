@@ -1,7 +1,8 @@
 /**
- * Recommendations API Tests
- *
- * Tests for the recommendations API client functions.
+ * @fileoverview Recommendations API tests
+ * @description Tests for recommendations API client functions
+ * @author Howl2Go Dev Team
+ * @date 2025
  */
 
 import {

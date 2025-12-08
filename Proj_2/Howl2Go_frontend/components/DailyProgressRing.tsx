@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Daily progress ring component
+ * @description Circular progress indicator for daily nutrition goals
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { motion } from "framer-motion";

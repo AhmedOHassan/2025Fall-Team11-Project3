@@ -1,4 +1,9 @@
-// Cart-related type definitions
+/**
+ * @fileoverview Cart type definitions
+ * @description TypeScript types for shopping cart functionality
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
 
 import type { FoodItem } from "./food";
 

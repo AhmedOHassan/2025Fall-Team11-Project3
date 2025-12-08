@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Next.js middleware
+ * @description Route middleware for authentication and authorization
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 

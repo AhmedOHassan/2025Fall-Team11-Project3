@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Root layout component
+ * @description Main application layout with providers and metadata
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";

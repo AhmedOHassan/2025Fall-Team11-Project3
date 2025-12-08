@@ -1,5 +1,8 @@
 /**
- * Orders page (client): displays the authenticated user's order history.
+ * @fileoverview Orders page
+ * @description User order history and tracking page
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * This page calls the frontend proxy `/api/proxy?path=/api/orders/me` to fetch
  * the current user's orders (the proxy attaches the httpOnly access token),

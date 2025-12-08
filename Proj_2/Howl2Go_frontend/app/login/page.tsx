@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Login page
+ * @description User authentication page
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { Suspense } from "react";

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Order API tests
+ * @description Integration tests for order creation and management
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { describe, test, expect, beforeAll, afterAll } from "@jest/globals";
 import assert from "node:assert/strict";
 import request from "supertest";

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview User controller
+ * @description Handles user authentication, registration, and profile management
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import User from "../models/User.js";
 import {
   generateAccessToken,

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Food routes
+ * @description API routes for food item queries and recommendations
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import express from 'express';
 import {
   recommendFood

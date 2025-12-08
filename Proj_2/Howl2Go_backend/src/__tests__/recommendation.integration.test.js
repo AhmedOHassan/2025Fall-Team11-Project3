@@ -1,5 +1,8 @@
 /**
- * Recommendation API Integration Tests
+ * @fileoverview Recommendation API integration tests
+ * @description Integration tests for recommendation API endpoints
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Tests for the recommendation API endpoints.
  * Tests all routes under /api/recommendations.

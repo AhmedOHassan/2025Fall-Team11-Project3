@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Food controller
+ * @description Handles food item queries, search, and filtering operations
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import FastFoodItem from "../models/FastFoodItem.js";
 
 /**

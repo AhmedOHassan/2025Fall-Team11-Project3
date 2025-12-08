@@ -1,3 +1,10 @@
+/**
+ * @fileoverview User preferences tests
+ * @description Unit tests for user dietary preferences functionality
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { describe, test, expect, beforeEach, jest } from "@jest/globals";
 import assert from "node:assert/strict";
 

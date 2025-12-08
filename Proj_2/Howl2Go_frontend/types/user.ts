@@ -1,4 +1,9 @@
-// User-related type definitions for dashboard and profile management
+/**
+ * @fileoverview User type definitions
+ * @description TypeScript types for user profiles and dashboard data
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
 
 import type { FoodItem } from "./food";
 

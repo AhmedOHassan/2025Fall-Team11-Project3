@@ -1,5 +1,8 @@
 /**
- * Recommendation Service Tests
+ * @fileoverview Recommendation service tests
+ * @description Tests for AI-powered meal recommendation service
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Tests for the AI-powered meal recommendation service.
  * Covers order history analysis, personalized recommendations,

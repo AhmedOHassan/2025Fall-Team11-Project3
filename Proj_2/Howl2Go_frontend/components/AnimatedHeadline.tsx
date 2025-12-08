@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Animated headline component
+ * @description Text animation component for hero headlines
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { motion } from "framer-motion";

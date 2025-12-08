@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Food API integration tests
+ * @description End-to-end tests for food search and query endpoints
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import {
     describe,
     test,

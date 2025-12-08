@@ -1,3 +1,9 @@
+/**
+ * @fileoverview Login API route
+ * @description Handles user login and sets authentication cookies
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
 
 import { cookies } from "next/headers";
 

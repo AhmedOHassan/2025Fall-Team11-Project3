@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Authentication middleware
+ * @description JWT-based authentication and authorization middleware
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import User from '../models/User.js';
 import { verifyToken, extractTokenFromHeader } from '../utils/jwt.util.js';
 

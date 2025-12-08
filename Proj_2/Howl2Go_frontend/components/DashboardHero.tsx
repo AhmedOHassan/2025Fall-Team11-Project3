@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Dashboard hero component
+ * @description Main hero section for user dashboard
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { useState } from "react";

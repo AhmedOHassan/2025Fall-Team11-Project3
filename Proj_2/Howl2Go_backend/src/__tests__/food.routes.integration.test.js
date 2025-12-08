@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Food routes integration tests
+ * @description Integration tests for food API routes
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 // import test from 'node:test';
 import { describe, test, expect, beforeAll, afterAll } from "@jest/globals";
 import assert from "node:assert/strict";

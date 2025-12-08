@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Authentication context provider
+ * @description React context for managing user authentication state
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";

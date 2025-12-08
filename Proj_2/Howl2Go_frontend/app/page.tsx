@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Home page
+ * @description Landing page with hero section and search
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import Header from "@/components/Header";

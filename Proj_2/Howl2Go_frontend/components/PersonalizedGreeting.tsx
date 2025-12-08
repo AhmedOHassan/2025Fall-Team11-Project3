@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Personalized greeting component
+ * @description Dynamic greeting message based on time of day
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { motion } from "framer-motion";

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview User model
+ * @description MongoDB schema for user accounts with authentication and preferences
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
 
