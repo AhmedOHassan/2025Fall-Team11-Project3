@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Dashboard page
+ * @description User dashboard with personalized data and recommendations
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { useEffect, useState } from "react";

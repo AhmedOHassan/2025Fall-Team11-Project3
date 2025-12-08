@@ -1,4 +1,9 @@
-// Shared types for food items and API responses
+/**
+ * @fileoverview Food type definitions
+ * @description TypeScript types for food items and search results
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
 
 export interface mockSearchResults {
   [key: string]: string;

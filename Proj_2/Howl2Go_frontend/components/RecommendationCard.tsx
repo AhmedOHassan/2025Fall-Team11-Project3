@@ -1,8 +1,15 @@
+/**
+ * @fileoverview Recommendation card component
+ * @description Individual recommendation card with meal details
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 /**
  * RecommendationCard Component
- *
+*
  * Displays a single food recommendation with reasoning and confidence.
  * Shows special badges for different recommendation types.
  */

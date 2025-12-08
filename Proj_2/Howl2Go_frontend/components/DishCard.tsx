@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Dish card component
+ * @description Simple card for displaying dish information
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { motion } from "framer-motion";

@@ -1,4 +1,9 @@
-// Authentication utility functions
+/**
+ * @fileoverview Authentication utilities
+ * @description Helper functions for user authentication checks
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
 
 /**
  * Check if user is authenticated by making a request to /api/auth/me

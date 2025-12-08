@@ -1,6 +1,8 @@
 /**
- * Tests for price-based recommendations feature
- * Tests price filter chips and natural language price queries
+ * @fileoverview Price-based search tests
+ * @description Tests for price filter chips and natural language price queries
+ * @author Howl2Go Dev Team
+ * @date 2025
  */
 
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'

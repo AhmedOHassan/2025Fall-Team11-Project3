@@ -1,5 +1,8 @@
 /**
- * Recommendation types for AI-powered meal suggestions
+ * @fileoverview Recommendation type definitions
+ * @description TypeScript types for AI-powered meal recommendations
+ * @author Howl2Go Dev Team
+ * @date 2025
  */
 
 import type { FoodItem } from "./food";

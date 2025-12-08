@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Recommendations section component
+ * @description AI-powered meal recommendations display
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 /**

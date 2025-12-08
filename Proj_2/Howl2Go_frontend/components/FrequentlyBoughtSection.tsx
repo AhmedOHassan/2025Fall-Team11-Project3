@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Frequently bought section component
+ * @description Horizontal scrolling section for popular items
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { useRef } from "react";

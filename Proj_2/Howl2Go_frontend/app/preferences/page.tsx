@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Preferences page
+ * @description User dietary preferences and restrictions management
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { useEffect, useState } from "react";

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Recent meals section component
+ * @description Displays user's recent meal orders
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";

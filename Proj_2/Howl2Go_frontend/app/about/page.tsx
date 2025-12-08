@@ -1,3 +1,10 @@
+/**
+ * @fileoverview About page
+ * @description Information about Howl2Go and team members
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import Link from "next/link";

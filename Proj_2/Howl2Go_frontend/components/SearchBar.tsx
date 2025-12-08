@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Search bar component
+ * @description Food search input with natural language support
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import { Search } from "lucide-react";

@@ -1,5 +1,10 @@
 /**
- * Cart page (client): displays current cart items, allows quantity updates/removals,
+ * @fileoverview Cart page
+ * @description Shopping cart with checkout functionality
+ * @author Howl2Go Dev Team
+ * @date 2025
+ *
+ * Displays current cart items, allows quantity updates/removals,
  * and places orders by posting the cart payload to the backend via the frontend
  * proxy (`/api/proxy?path=/api/orders`). The proxy forwards the httpOnly accessToken
  * as an Authorization header so backend auth middleware can attach `req.user`.

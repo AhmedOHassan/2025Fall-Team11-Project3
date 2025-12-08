@@ -1,7 +1,8 @@
 /**
- * RecommendationCard Component Tests
- *
- * Tests for the recommendation card display and interactions.
+ * @fileoverview RecommendationCard component tests
+ * @description Tests for recommendation card display and interactions
+ * @author Howl2Go Dev Team
+ * @date 2025
  */
 
 import React from "react";

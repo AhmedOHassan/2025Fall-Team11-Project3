@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Signup page
+ * @description User registration page
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 import React from "react";

@@ -1,7 +1,8 @@
 /**
- * Recommendations API client
- *
- * Functions to fetch AI-powered meal recommendations from the backend.
+ * @fileoverview Recommendations API client
+ * @description Functions to fetch AI-powered meal recommendations
+ * @author Howl2Go Dev Team
+ * @date 2025
  */
 
 import type { RecommendationsResponse, UserProfileResponse } from "@/types/recommendation";

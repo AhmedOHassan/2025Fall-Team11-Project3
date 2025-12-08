@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Item card component
+ * @description Food item card with details and add to cart functionality
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 "use client";
 
 /**
