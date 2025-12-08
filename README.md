@@ -8,10 +8,9 @@
 
 *Crave it. Find it. Instantly.*
 
+[![Watch the previous features demo](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](https://drive.google.com/file/d/1GpH5jJUv2xHC_xYNScsTxllGcykTA2Hj/view?usp=drive_link)
 
-
-[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](https://drive.google.com/file/d/1GpH5jJUv2xHC_xYNScsTxllGcykTA2Hj/view?usp=drive_link)
-
+[![Watch the new features demo](https://img.youtube.com/vi/tOoPAFytK_I/0.jpg)](https://youtu.be/tOoPAFytK_I?si=ntMP5fyg6Uxubvv_)
 
 <!-- Build & Quality Badges -->
 [![Backend Deployment Status](https://img.shields.io/badge/Backend-Live-brightgreen.svg?style=flat&logo=render)](https://howl2go-backend-service.onrender.com/api/health)
