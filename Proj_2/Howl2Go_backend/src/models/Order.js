@@ -1,5 +1,8 @@
 /**
- * Order model
+ * @fileoverview Order model
+ * @description MongoDB schema for persisted orders with session and user tracking
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Defines the MongoDB schema for persisted orders. An order stores a reference
  * to the originating session (`sessionId`) and optionally the authenticated

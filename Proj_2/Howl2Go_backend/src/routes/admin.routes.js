@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Admin routes
+ * @description API routes for administrative user management
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import express from "express";
 import { authenticate, authorize } from "../middleware/auth.middleware.js";
 import { listUsers, createStaff, updateUser, deleteUser } from "../controllers/admin.controller.js";

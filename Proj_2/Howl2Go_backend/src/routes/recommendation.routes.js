@@ -1,7 +1,9 @@
 /**
- * Recommendation Routes
+ * @fileoverview Recommendation routes
+ * @description API routes for AI-powered meal recommendations
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
- * API routes for AI-powered meal recommendations.
  * All routes support optional authentication - logged-in users get personalized
  * recommendations based on order history, while guests get popular items.
  *

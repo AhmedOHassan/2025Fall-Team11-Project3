@@ -1,5 +1,8 @@
 /**
- * Order routes
+ * @fileoverview Order routes
+ * @description API routes for order creation and management
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Endpoint summary:
  * - POST `/`         : Create order from current session cart (optional auth)

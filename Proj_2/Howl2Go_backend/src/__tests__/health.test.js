@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Health check tests
+ * @description Tests for health check endpoint functionality
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 // import test from 'node:test';
 import { describe, test, expect, beforeAll, afterAll } from "@jest/globals";
 import assert from "node:assert/strict";

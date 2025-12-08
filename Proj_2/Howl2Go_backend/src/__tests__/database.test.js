@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Database connection tests
+ * @description Tests for MongoDB connection functionality
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { describe, test, expect, afterAll, beforeAll } from "@jest/globals";
 import assert from "node:assert/strict";
 import mongoose from "mongoose";

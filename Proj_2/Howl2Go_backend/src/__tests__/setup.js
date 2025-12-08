@@ -1,6 +1,8 @@
 /**
- * Global setup for Jest tests
- * This file runs once before all test suites
+ * @fileoverview Jest global setup
+ * @description Global setup for Jest tests - runs once before all test suites
+ * @author Howl2Go Dev Team
+ * @date 2025
  */
 
 export default async function globalSetup() {

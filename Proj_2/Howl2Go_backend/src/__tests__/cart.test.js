@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Cart API tests
+ * @description Integration tests for shopping cart operations
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import {
   describe,
   test,

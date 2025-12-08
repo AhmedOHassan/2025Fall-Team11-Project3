@@ -1,3 +1,10 @@
+/**
+ * @fileoverview User routes
+ * @description API routes for user authentication and profile management
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import express from "express";
 import {
   register,

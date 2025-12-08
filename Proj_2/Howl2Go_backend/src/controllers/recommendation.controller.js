@@ -1,7 +1,9 @@
 /**
- * Recommendation Controller
+ * @fileoverview Recommendation controller
+ * @description Handles HTTP requests for AI-powered meal recommendations
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
- * Handles HTTP requests for AI-powered meal recommendations.
  * Provides personalized food suggestions based on user order history.
  *
  * Endpoints:

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Cart controller
+ * @description Handles shopping cart operations including add, update, remove, and checkout
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import Cart from '../models/Cart.js';
 import FastFoodItem from '../models/FastFoodItem.js';
 

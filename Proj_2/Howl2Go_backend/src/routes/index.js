@@ -1,5 +1,8 @@
 /**
- * API route index
+ * @fileoverview API route index
+ * @description Central router that mounts all feature routes
+ * @author Howl2Go Dev Team
+ * @date 2025
  *
  * Central router that mounts feature routers under `/api/*` in the server.
  * - `/health`  : health checks

@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Admin user seeding script
+ * @description Creates default admin and staff users in the database
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import mongoose from "mongoose";
 import env from "../config/env.js";
 import User from "../models/User.js";

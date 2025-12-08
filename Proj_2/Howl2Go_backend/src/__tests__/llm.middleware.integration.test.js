@@ -1,7 +1,12 @@
 /**
- * Integration tests for llm.middleware with mocked LLM service
+ * @fileoverview LLM middleware integration tests
+ * @description Integration tests for LLM middleware with mocked service
+ * @author Howl2Go Dev Team
+ * @date 2025
+ *
  * These tests cover the success paths that require LLM service interaction
  */
+
 import { describe, test, expect, jest, beforeEach } from "@jest/globals";
 import assert from "node:assert/strict";
 

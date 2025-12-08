@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Cart routes
+ * @description API routes for shopping cart management
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { Router } from 'express';
 import {
   getCart,

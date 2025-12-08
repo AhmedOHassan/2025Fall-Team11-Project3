@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Fast food data import script (V4)
+ * @description Imports fast food menu items from CSV file into MongoDB
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";

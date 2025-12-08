@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Application integration tests
+ * @description Tests for main Express application setup and middleware
+ * @author Howl2Go Dev Team
+ * @date 2025
+ */
+
 import { describe, test, expect, beforeAll, afterAll } from "@jest/globals";
 import request from "supertest";
 import app from "../app.js";
