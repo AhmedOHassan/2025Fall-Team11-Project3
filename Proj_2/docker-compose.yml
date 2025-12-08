@@ -1,0 +1,92 @@
+# Docker Compose for Howl2Go Development
+# Usage: docker compose up -d
+# Access: Frontend at http://localhost:3000, Backend at http://localhost:4000
+#
+# Environment Variables:
+#   Option 1: Use existing .env files in Howl2Go_backend/ and Howl2Go_frontend/
+#   Option 2: Create a .env file in Proj_2/ (see .env.example)
+#
+# WARNING: If .env files are missing, the application will fail to start.
+#          Required: GROQ_API_KEY, JWT_SECRET, JWT_REFRESH_SECRET, SESSION_SECRET
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:latest
+    container_name: howl2go-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: [ "CMD", "mongosh", "--eval", "db.adminCommand('ping')" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # Backend API Server
+  backend:
+    build:
+      context: ./Howl2Go_backend
+      dockerfile: Dockerfile
+    container_name: howl2go-backend
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./Howl2Go_backend/.env
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+      - MONGODB_URI=mongodb://mongodb:27017/howl2go
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:4000/api/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})" ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  # Frontend Next.js App
+  frontend:
+    build:
+      context: ./Howl2Go_frontend
+      dockerfile: Dockerfile
+    container_name: howl2go-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./Howl2Go_frontend/.env
+    environment:
+      - NODE_ENV=production
+      - BACKEND_URL=http://backend:4000
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  # Data Seeder (runs once to import food data and create admin)
+  seeder:
+    build:
+      context: ./Howl2Go_backend
+      dockerfile: Dockerfile
+    container_name: howl2go-seeder
+    env_file:
+      - ./Howl2Go_backend/.env
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongodb:27017/howl2go
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    command: >
+      sh -c "npm run import:fastfood && npm run seed:admin || true"
+    restart: "no"
+
+volumes:
+  mongodb_data:
+    driver: local
